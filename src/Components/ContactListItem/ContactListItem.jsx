@@ -1,4 +1,4 @@
-import styles from './ContactListItem.module.css';
+import styles from './ContactListItem.module.scss';
 import { useDispatch } from 'react-redux';
 import contactsOperations from '../../Redux/contacts/contacts-operations';
 

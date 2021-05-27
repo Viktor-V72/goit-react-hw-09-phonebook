@@ -1,7 +1,7 @@
 import { useState, useCallback } from 'react';
 import { useDispatch } from 'react-redux';
 import { contactsOperations } from '../../Redux/contacts';
-import styles from './ContactForm.module.css';
+import styles from './ContactForm.module.scss';
 
 const initialState = { name: '', number: '' };
 

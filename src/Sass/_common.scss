@@ -1,0 +1,54 @@
+main {
+  flex-grow: 1;
+}
+
+.flexbox {
+  @include container(flex, center, center);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  text-align: center;
+  background-color: burlywood;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body.is-open {
+  overflow: hidden;
+}
+
+h1,
+h2,
+h3,
+ul,
+p,
+b {
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  font-size: 25px;
+  color: rgb(137, 130, 238);
+  margin-top: 10px;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}

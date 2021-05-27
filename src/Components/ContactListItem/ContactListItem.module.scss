@@ -1,7 +1,13 @@
+@import '../../Sass/main.scss';
+
 .item {
   margin-right: 18px;
   outline: 2px solid gray;
   padding: 10px;
+
+  @include for-size(mobile) {
+    margin-top: 10px;
+  }
 }
 
 .contact {

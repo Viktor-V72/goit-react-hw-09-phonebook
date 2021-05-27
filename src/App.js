@@ -6,7 +6,6 @@ import AppBar from './Components/AppBar';
 import { authOperations } from './Redux/auth';
 import PrivateRoute from './Components/Routes/PrivateRoute';
 import PublicRoute from './Components/Routes/PublicRoute';
-import './styles.css';
 
 const HomeView = lazy(() => import('./views/HomeView'));
 const RegisterView = lazy(() => import('./views/RegisterView'));

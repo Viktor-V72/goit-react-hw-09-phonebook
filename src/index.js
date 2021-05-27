@@ -6,7 +6,7 @@ import store from './Redux/store';
 import App from './App';
 import { BrowserRouter } from 'react-router-dom';
 import 'modern-normalize/modern-normalize.css';
-import './styles.css';
+import './Sass/main.scss';
 
 ReactDOM.render(
   <React.StrictMode>

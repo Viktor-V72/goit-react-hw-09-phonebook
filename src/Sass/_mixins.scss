@@ -1,0 +1,40 @@
+@mixin container($df, $jc, $ai) {
+  display: $df;
+  justify-content: $jc;
+  align-items: $ai;
+}
+
+@mixin for-size($range) {
+  $mobile: 320px;
+  $tablet: 768px;
+  $desktop: 1024px;
+  @if $range==mobile-only {
+    @media (min-width: 0px) and (max-width: $mobile) {
+      @content;
+    }
+  } @else if $range==mobile {
+    @media (min-width: $mobile) and (max-width: $tablet - 1) {
+      @content;
+    }
+  } @else if $range==till-tablet {
+    @media (min-width: 0px) and (max-width: $tablet - 1) {
+      @content;
+    }
+  } @else if $range==tablet {
+    @media (min-width: $tablet) and (max-width: $desktop - 1) {
+      @content;
+    }
+  } @else if $range==mobile-plus {
+    @media (min-width: 0px) and (max-width: $desktop - 1) {
+      @content;
+    }
+  } @else if $range == tablet-plus {
+    @media (min-width: $tablet) {
+      @content;
+    }
+  } @else if $range == desktop {
+    @media (min-width: $desktop) {
+      @content;
+    }
+  }
+}

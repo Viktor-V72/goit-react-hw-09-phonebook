@@ -1,5 +1,14 @@
+@import '../../Sass/main.scss';
+
 .form {
   align-content: center;
+  width: 100%;
+
+  @include for-size(mobile) {
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .name {
@@ -14,6 +23,10 @@
   color: #fff;
   cursor: pointer;
   padding: 8px 16px;
+
+  @include for-size(mobile) {
+    margin-top: 10px;
+  }
 }
 
 .label {
